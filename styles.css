@@ -1,0 +1,19 @@
+#main {
+  margin: 0 auto;
+}
+
+.square-cell {
+  font-size: 10px;
+  padding-left: 10px;
+  border: 1px solid red;
+  background-color: black;
+  overflow: hidden;
+}
+
+.square-empty {
+  font-size: 10px;
+  padding-left: 10px;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
