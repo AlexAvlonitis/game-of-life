@@ -17,15 +17,13 @@
     }, tick);
   }
 
-  function display(seed) {
-    var newSeedformat = life.arrayClone(seed);
-
+  function display(generation) {
     var printThis = "";
-    for (var i = 0; i < newSeedformat.length; i++) {
+    for (var i = 0; i < generation.length; i++) {
       printThis += "<br>"
-      var row = newSeedformat[i];
+      var row = generation[i];
       for (var j = 0; j < row.length; j++) {
-        if (newSeedformat[i][j] === 1) {
+        if (generation[i][j] === 1) {
           printThis += "<span class='square-cell'>&nbsp;</span>"
         } else {
           printThis += "<span class='square-empty'>&nbsp;</span>"
